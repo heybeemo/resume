@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Algoz\\Documents\\Resume\\MainFile\\Biogi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Algoz\\Documents\\Resume\\MainFile\\Biogi\\src\\components\\Portfolio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Portfolio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Algoz\\Documents\\Resume\\MainFile\\Biogi\\src\\components\\PopUp.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\PopUp.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Algoz\\Documents\\Resume\\MainFile\\Biogi\\src\\components\\Home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PopUp.jsx",
+              "DocumentMoniker": "C:\\Users\\Algoz\\Documents\\Resume\\MainFile\\Biogi\\src\\components\\PopUp.jsx",
+              "RelativeDocumentMoniker": "src\\components\\PopUp.jsx",
+              "ToolTip": "C:\\Users\\Algoz\\Documents\\Resume\\MainFile\\Biogi\\src\\components\\PopUp.jsx",
+              "RelativeToolTip": "src\\components\\PopUp.jsx",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAD4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-10-07T18:12:43.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Portfolio.jsx",
+              "DocumentMoniker": "C:\\Users\\Algoz\\Documents\\Resume\\MainFile\\Biogi\\src\\components\\Portfolio.jsx",
+              "RelativeDocumentMoniker": "src\\components\\Portfolio.jsx",
+              "ToolTip": "C:\\Users\\Algoz\\Documents\\Resume\\MainFile\\Biogi\\src\\components\\Portfolio.jsx",
+              "RelativeToolTip": "src\\components\\Portfolio.jsx",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAAAKAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-10-07T18:04:55.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.jsx",
+              "DocumentMoniker": "C:\\Users\\Algoz\\Documents\\Resume\\MainFile\\Biogi\\src\\components\\Home.jsx",
+              "RelativeDocumentMoniker": "src\\components\\Home.jsx",
+              "ToolTip": "C:\\Users\\Algoz\\Documents\\Resume\\MainFile\\Biogi\\src\\components\\Home.jsx",
+              "RelativeToolTip": "src\\components\\Home.jsx",
+              "ViewState": "AQIAAOMAAAAAAAAAAAAmwAwBAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-09-03T12:15:54.807Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
