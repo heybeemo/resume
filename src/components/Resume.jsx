@@ -211,7 +211,7 @@ const Resume = () => {
                         <img src={GodotImg} alt="godot-img"/>
                         <div className="skill-counter-main sketch-text">
                             <p></p>
-                            <p>Adobe Flow</p>
+                            <p>Autodesk</p>
                         </div>
                     </div>
                     <div className="design-skills-img-main flip_up">

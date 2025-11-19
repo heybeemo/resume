@@ -1,5 +1,5 @@
 /* eslint-disable no-duplicate-case */
-import React from "react";
+import React, { useEffect } from "react";
 // Seus imports (CloseSvg, etc.) podem não ser todos necessários aqui
 // a menos que usados como fallback, mas mantenha o que for preciso.
 
@@ -67,6 +67,26 @@ const renderHtmlContent = (content) => ({ __html: content });
  * Agora ele recebe 'contentBlocks' e ignora as props antigas.
  */
 const Popup = ({ isVisible, onClose, contentBlocks = [] }) => {
+useEffect(() => {
+        // Se o popup NÃO estiver visível (fechou)
+        if (!isVisible) {
+            // 1. Encontra todos os vídeos locais (<video>) na tela
+            const videos = document.querySelectorAll('video');
+            videos.forEach(video => {
+                video.pause(); // Pausa o vídeo
+                video.currentTime = 0; // (Opcional) Reseta para o início
+            });
+
+            // 2. (Opcional) Se você ainda tiver iframes do Vimeo/YouTube
+            const iframes = document.querySelectorAll('iframe');
+            iframes.forEach(iframe => {
+                // O truque para parar iframe é resetar o 'src' dele
+                const source = iframe.src;
+                iframe.src = source;
+            });
+        }
+    }, [isVisible]);
+
   // Função helper para renderizar um bloco individual
   const renderBlock = (block, index) => {
     switch (block.type) {
@@ -154,6 +174,25 @@ const Popup = ({ isVisible, onClose, contentBlocks = [] }) => {
                                 />
                             ))}
                         </ul>
+                    )}
+                </div>
+            );
+        case 'local_video':
+            return (
+                <div key={index} className="video-container" style={{ margin: '20px 0' }}>
+                    <video
+                        controls       // Mostra play/pause/volume
+                        width="50%"   // Ocupa a largura total do container
+                        height="50%"
+                        style={{ borderRadius: '10px' }} // Opcional: borda arredondada
+                    >
+                        <source src={block.src} type="video/mp4" />
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                    {block.caption && (
+                        <p style={{ textAlign: 'center', fontSize: '14px', color: '#ccc', marginTop: '5px' }}>
+                            {block.caption}
+                        </p>
                     )}
                 </div>
             );

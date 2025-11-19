@@ -43,6 +43,7 @@ import EventGardenMain from "../assets/images/eventgarden-main.png";
 
 //Hackathon
 import HackathonMain from "../assets/images/hackathon-main.png";
+import HackathonVideo from "../assets/videos/hackathonVideo.mp4";
 
 const Portfolio = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -174,6 +175,11 @@ const popups = [
                     'Battleship Blitz is a captivating and innovative cartoon-style strategy game designed for the casual gaming market. The game features a variety of consumables and boosts, along with strategically placed obstacles that enhance the tactical depth and replayability. Players engage in combat by selecting grid cells to attack, aiming to sink their opponent’s fleet. It is played as PvE battle, where they must sink all enemy ships within a limited number of moves. Each level presents a grid with hidden enemy ships, and players select cells to attack, aiming to reveal and destroy the ships.'
             },
             {
+                type: 'local_video', // Novo tipo
+                src: HackathonVideo,   // A variável importada (não é string entre aspas)
+                caption: 'Battleship Blitz' // Opcional
+            },
+            {
                 type: 'paragraph', text:
                 'Utilize a variety of consumables and boosts, such as radar scans, explosive attacks, and defensive shields, to gain tactical advantages. Strategic obstacles like mines and reefs add complexity, requiring careful planning to navigate. As players progress, levels become more challenging, offering an increasingly exciting and dynamic gameplay experience similar to the progression found in Royal Match.'
             },
@@ -299,7 +305,11 @@ const popups = [
               Portfolio.
             </h2>
             <div className="line"></div>
-          </div>
+              </div>
+              {/* --- ADICIONE ESTA PARTE AQUI --- */}
+              <p className="fade_up" style={{ color: '#cccccc', marginTop: '5px', fontSize: '16px' }}>
+                  Click below for more details
+              </p>
           <div className="portfolios-group-main">
             {popups.map((popupContent, index) => (
                 <div key={index}>
